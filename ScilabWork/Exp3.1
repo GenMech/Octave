@@ -1,0 +1,11 @@
+clc
+disp('Gitesh Pareek 20514813120')
+
+alpha=1
+x=grand(10000,1,"exp",alpha)
+Xmax = max(x) ;
+histplot (40 ,x, style =2)
+x = linspace (0,max(Xmax),100);
+plot2d (x , alpha*exp(-alpha*x))
+legend (['exponential random sample histogram' ' exact density curve' ]) ;
+xtitle('Exponential Probability Distribution by Gitesh Pareek 20514813120','Sample Values','Exponential Output Values')
